@@ -4,10 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Poornashree L | Portfolio</title>
+
 <link rel="stylesheet" href="css/custom.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
+<script src="https://unpkg.com/@formspree/ajax@1"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contact-form");
+
+    formspree('initForm', {
+        formElement: form,
+        formId: 'xwvyqwny'
+    });
+
+});
+</script>
 
 <body>
 
@@ -35,14 +51,19 @@
     <div class="hero-left">
         <h1>Hi, I'm <span>Poornashree L</span></h1>
         <h2 id="typing-text"></h2>
+
         <p>
             Computer Science Engineering Graduate focused on AI systems,
             Full Stack Development, and Cybersecurity innovation.
         </p>
 
         <div class="hero-buttons">
-            <a href="assests/Poornashree L Resume.pdf" download class="btn">Download Resume</a>
-            <a href="#contact" class="btn-outline">Let's Connect</a>
+            <a href="assests/Poornashree L Resume.pdf" download class="btn">
+                Download Resume
+            </a>
+            <a href="#contact" class="btn-outline">
+                Let's Connect
+            </a>
         </div>
     </div>
 
@@ -59,7 +80,7 @@
         Motivated Computer Science Engineering fresher with strong knowledge in
         software engineering, artificial intelligence, full stack development,
         and cybersecurity fundamentals. Passionate about solving real-world
-        problems through technology and building scalable digital products.
+        problems through technology.
     </p>
 </section>
 
@@ -72,7 +93,6 @@
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
     <h2 class="section-title">Experience</h2>
-
     <div id="experience-container"></div>
 </section>
 
@@ -87,26 +107,35 @@
     <h2 class="section-title">Publication</h2>
 
     <div class="publication-card">
-        <h3>AI-Driven Medical Voice Bot with Real Doctor Consultation for Enhanced Healthcare Communication</h3>
+        <h3>AI-Driven Medical Voice Bot</h3>
         <p>Published in IJERT Journal</p>
 
         <a target="_blank"
-        href="https://www.ijert.org/ai-driven-medical-voice-bot-with-real-doctor-consultation-for-enhanced-healthcare-communication"
-        class="btn">
-        View Publication
+           href="https://www.ijert.org/ai-driven-medical-voice-bot-with-real-doctor-consultation-for-enhanced-healthcare-communication"
+           class="btn">
+            View Publication
         </a>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section">
+
     <h2 class="section-title">Contact Me</h2>
 
     <form id="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+
+        <div data-fs-success></div>
+        <div data-fs-error></div>
+
+        <button type="submit" class="btn" data-fs-submit-btn>
+            Send Message
+        </button>
+
     </form>
 
     <div class="socials">
@@ -114,6 +143,7 @@
         <a href="https://linkedin.com/in/poornashree-l-19b620294" target="_blank">LinkedIn</a>
         <a href="mailto:poornashree.lm@gmail.com">Email</a>
     </div>
+
 </section>
 
 <footer>
@@ -123,5 +153,20 @@
 <button id="backToTop">↑</button>
 
 <script type="module" src="js/main.js"></script>
+
+<!-- ✅ FORMSPREE INTEGRATION (FIXED POSITION) -->
+<script>
+window.formspree = window.formspree || function () {
+    (formspree.q = formspree.q || []).push(arguments);
+};
+
+formspree('initForm', {
+    formElement: '#contact-form',
+    formId: 'xwvyqwny'
+});
+</script>
+
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
 </body>
 </html>
