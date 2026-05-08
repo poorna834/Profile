@@ -1,44 +1,53 @@
-
-
 export const skills = [
+
   {
     name: "Java",
-    level: "Intermediate"
+    icon: "fa-brands fa-java"
   },
+
   {
     name: "Python",
-    level: "Intermediate"
+    icon: "fa-brands fa-python"
   },
+
   {
     name: "Full Stack Web Development",
-    level: "Intermediate"
+    icon: "fa-solid fa-code"
   },
+
   {
     name: "Artificial Intelligence",
-    level: "Basics"
+    icon: "fa-solid fa-robot"
   },
+
   {
     name: "Cybersecurity Fundamentals",
-    level: "Intermediate"
+    icon: "fa-solid fa-shield-halved"
   },
+
   {
     name: "HTML5",
-    level: "Basics"
+    icon: "fa-brands fa-html5"
   },
+
   {
     name: "CSS",
-    level: "Basics"
+    icon: "fa-brands fa-css3-alt"
   },
+
   {
     name: "JavaScript",
-    level: "Basics"
+    icon: "fa-brands fa-js"
   },
+
   {
     name: "Git & GitHub",
-    level: "Intermediate"
+    icon: "fa-brands fa-github"
   },
+
   {
     name: "Problem Solving",
-    level: "Intermediate"
+    icon: "fa-solid fa-lightbulb"
   }
+
 ];
