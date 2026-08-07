@@ -4,7 +4,7 @@ export const projects = [
     title: "Cogniverse AI - AI-Powered Knowledge & Learning Platform",
 
     description:
-      "Developed Cogniverse AI, an intelligent AI-powered knowledge and learning platform designed to provide interactive conversations, personalized learning experiences, and efficient knowledge discovery. The application integrates Generative AI capabilities to assist users with real-time information access, learning support, and intelligent responses. Built a full-stack MERN application with a responsive frontend, secure backend APIs, database management, authentication system, and scalable architecture. Implemented modern UI/UX principles to deliver a seamless user experience across devices.",
+      "Developed Cogniverse AI, an AI-powered knowledge and learning platform that provides interactive conversations, personalized learning support, and intelligent responses using Generative AI. Built with MERN stack, secure authentication, database integration, and responsive UI for seamless user experience.",
 
 
     github:
